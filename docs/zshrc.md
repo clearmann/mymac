@@ -1,3 +1,5 @@
+`.zshrc`的相关配置文件
+```bash
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -21,9 +23,19 @@ alias ,ip="ipconfig getifaddr en0 && ipconfig getifaddr en1"
 alias ,gitconfig="vim ~/.gitconfig"
 alias ,sshconfig="vim ~/.ssh/config"
 alias ,zshrc="vim ~/.zshrc"
+
+# 编码软件
+# vscode
 alias ,c="code ."
+# webstorm
 alias ,i="webstorm ."
+# goland
 alias ,g="goland ."
+# antigravity
+alias ,anti="antigravity ."
+# cursor
+alias ,cursor="cursor ."
+
 alias ~="cd ~"
 alias ..="cd ../"
 alias ...="cd ../../"
@@ -43,3 +55,4 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export TLDR_LANGUAGE="zh"
 
 
+```
