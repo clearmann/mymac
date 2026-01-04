@@ -1,4 +1,21 @@
 `.zshrc`的相关配置文件
+
+配置 zsh 插件
+
+`git`: 无须多言
+
+`z`: 快速跳转命令插件
+
+`zsh-syntax-highlighting`: 语法高亮，需要单独安装才能使用
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+`zsh-autosuggestions`: 自动补全,需要单独安装才能使用
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+`autojump`: 跳转目录
 ```bash
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
