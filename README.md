@@ -9,3 +9,4 @@
 - [方便使用的shell zsh](docs/zsh.md)
 - [必备效率软件 alfred](docs/alfred.md)
 - [必不可少的 git](docs/git.md)
+- [如何快速切换APP Thor](docs/thor.md)
