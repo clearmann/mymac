@@ -4,5 +4,8 @@
 
 # 系列文章
 - [无敌的包管理器 Homebrew](docs/homebrew.md)
+- [配置自己的专有快捷键 F19](docs/f19.md)
 - [给枯燥的命令行添加颜色 iterm2](docs/iterm2.md)
 - [方便使用的shell zsh](docs/zsh.md)
+- [必备效率软件 alfred](docs/alfred.md)
+- [必不可少的 git](docs/git.md)

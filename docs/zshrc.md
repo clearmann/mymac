@@ -59,6 +59,14 @@ alias ...="cd ../../"
 alias ll="ls -alhG"
 alias ls="ls -G"
 
+# 有时候想临时记忆点东西，但又不知道放到哪里，开启一个临时目录
+alias cdtmp="cd `mktemp -d /tmp/clearmann-XXXXXX`"
+
+# 创建一个目录并进入
+function mcd {
+    mkdir $1 && cd $1
+}
+
 # nginx 相关
 alias nginx-start="nginx -t && brew services start nginx"
 alias nginx-restart="nginx -t && brew services restart nginx"
