@@ -1,0 +1,55 @@
+# 全局 Git 配置
+# macOS 系统文件
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# 编辑器/IDE 临时文件
+*.swp
+*.swo
+.idea/
+.vscode/
+*.suo
+*.log
+
+# 压缩包/可执行文件
+*.zip
+*.dmg
+*.pkg
+
+
+# 本地文件
+loc/
+.cursor/
+softhsm2.conf
+.env
+.envrc
+vendor/
+.claude/
+
+
+# obsidian
+# ---- Obsidian：工作区/设备相关（不建议同步）----
+.obsidian/workspace*
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# ---- Obsidian：缓存/索引（可重建，没必要进 Git）----
+.obsidian/cache/
+.obsidian/graph.json
+.obsidian/backlink.json
+.obsidian/command-palette.json
+
+# ---- Obsidian：第三方插件的运行缓存（通常可重建）----
+.obsidian/plugins/**/data.json
+.obsidian/plugins/**/.cache/
+.obsidian/plugins/**/cache/
+.obsidian/plugins/**/log*.txt
+
+# ---- 日志/临时文件/系统杂项 ----
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
