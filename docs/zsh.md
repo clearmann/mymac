@@ -1,6 +1,16 @@
-`.zshrc`的相关配置文件
+# zsh
 
-配置 zsh 插件
+## 安装 oh-my-zsh
+
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) 是一套优秀的 zsh 配置框架，自带默认配置、插件和主题，支持定制化，开箱即用，目前在 GitHub 已有 170K+ Star。
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+安装完成后，执行 `source ~/.zshrc` 或关掉重开终端，让最新配置生效。
+
+## 配置 zsh 插件
 
 `git`: 无须多言
 
@@ -31,8 +41,8 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-alias codedir="cd /Users/clearmann.liu/Documents/src"
-alias softdir="cd /Users/clearmann.liu/Documents/soft"
+alias codedir="cd $HOME/Documents/src"
+alias softdir="cd $HOME/Documents/soft"
 alias gcp='git cherry-pick'
 
 alias ,pi="echo 'Pinging Baidu' && ping www.baidu.com"
@@ -76,7 +86,8 @@ alias git="hub"
 alias st="status"
 alias help='tldr'
 alias lg="lazygit"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+# openjdk：用 $(brew --prefix) 自动兼容 Intel(/usr/local) 与 Apple Silicon(/opt/homebrew)
+export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
 export TLDR_LANGUAGE="zh"
 
 

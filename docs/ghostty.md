@@ -1,65 +1,52 @@
 ## 配置文件
 ```
+# --- 基础与模拟终端 ---
 term = xterm-256color
-# 绑定快捷键：切换到上一个标签页
-keybind = super+left=previous_tab
+shell-integration = detect
 
-# 绑定快捷键：切换到下一个标签页
-keybind = super+right=next_tab
+# --- 主题与外观 ---
+theme = TokyoNight
+# 建议保持 0.85 左右才有磨砂感，1.0 是完全不透明
+background-opacity = 0.85
+background-blur = true
 
-
-# 关闭终端/标签页/分屏时，不弹出确认提示框
-confirm-close-surface = false
-
-# 设置主题
-theme = ToyChest
-
-
-# --- 字体与排版 ---
-font-family = "Maple Mono NF CN"
+# --- 字体设置 ---
+font-family = "Sarasa Term SC"
 font-size = 14
-font-thicken = true
-adjust-cell-height = 2
+# 如果你觉得行间距太挤，可以开启下面这一行（Ghostty 正确语法）：
+# adjust-line-height = 15%
 
-
-# --- 窗口与外观 ---
-background-blur-radius = 30
-macos-titlebar-style = transparent
+# --- 窗口样式 (针对 macOS 优化) ---
+# hidden 会彻底隐藏标题栏，最简洁
+macos-titlebar-style = tabs
 window-padding-x = 10
 window-padding-y = 8
 window-save-state = always
 window-theme = auto
+window-vsync = true
 
-
-# --- 光标 ---
-cursor-style = bar
+# --- 光标样式 ---
+cursor-style = block
 cursor-style-blink = true
 cursor-opacity = 0.8
 
-# --- 鼠标 ---
+# --- 行为控制 ---
+confirm-close-surface = false
 mouse-hide-while-typing = true
+scrollback-limit = 8388608
 
-
-
-# --- 快捷终端（类似 Quake 下拉终端）---
+# --- 快捷终端 (Quick Terminal / Quake Mode) ---
 quick-terminal-position = top
 quick-terminal-screen = mouse
 quick-terminal-autohide = true
 quick-terminal-animation-duration = 0.15
 
+# --- 快捷键自定义 ---
+# Ghostty 默认支持 cmd+ 和 cmd- 缩放，手动定义也没问题
+keybind = super+left=previous_tab
+keybind = super+right=next_tab
 
-
-# --- Shell 集成 ---
-shell-integration = detect
-
-
-# 字体大小
 keybind = cmd+plus=increase_font_size:1
 keybind = cmd+minus=decrease_font_size:1
 keybind = cmd+zero=reset_font_size
-
-
-# --- 性能 ---
-# 较大的滚动缓冲区（25MB）
-scrollback-limit = 25000000
 ```

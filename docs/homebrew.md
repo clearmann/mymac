@@ -8,6 +8,15 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 ## 2. 安装 APP 和 Cli 工具
+
+> 💡 推荐：仓库根目录已经整理好 [`Brewfile`](../Brewfile)，安装好 Homebrew 后，一条命令即可装齐下面所有 App 与 CLI 工具，无需逐条复制：
+>
+> ```bash
+> brew bundle --file=./Brewfile
+> ```
+>
+> 下面仍保留逐条列表，方便查阅每个软件的用途。
+
 用 HomeBrew 安装 App，以下是我可以用 HomeBrew 安装的 App 列表（以字母排序，方便查找）
 ```
 brew install --cask \
