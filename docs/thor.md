@@ -9,4 +9,4 @@ thor 是一个可以快速切换 APP 的工具
 
 下图是我的 thor 的简单配置
 
-![thor配置](https://clearmann.cn/uPic/P9ulcj.jpg)
+![thor配置](https://img.clearmann.cn/uPic/P9ulcj.jpg)

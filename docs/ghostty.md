@@ -1,5 +1,6 @@
 ## 配置文件
 ```
+term = xterm-256color
 # 绑定快捷键：切换到上一个标签页
 keybind = super+left=previous_tab
 
