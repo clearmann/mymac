@@ -19,6 +19,7 @@ brew bundle --file=./Brewfile
 - [无敌的包管理器 Homebrew](docs/homebrew.md)
 - [配置自己的专有快捷键 F19](docs/f19.md)
 - [现代终端 Ghostty](docs/ghostty.md)
+- [Orca 快捷键与 Agent hooks](docs/orca.md)
 - [方便使用的 shell zsh](docs/zsh.md)
 - [让终端飞起来的 CLI 工具](docs/cli-tools.md)
 - [必备效率软件 alfred](docs/alfred.md)

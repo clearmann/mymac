@@ -41,6 +41,7 @@
 ## 6. 开发配置
 
 - [ ] 配好 Git 的 name / email、push 默认行为与全局 ignore —— 见 [必不可少的 git](git.md)
+- [ ] 恢复 Orca 快捷键并检查 Agent 集成 —— 见 [Orca 配置](orca.md)
 
 ## 7. 我的个性化收尾
 
